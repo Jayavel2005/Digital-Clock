@@ -46,6 +46,7 @@ body{
 .clock-hour,
 .clock-minute{
     color:#48FF04;
+    font-size: 40px;
 }
 
 .clock-body{
@@ -53,6 +54,10 @@ body{
     position: relative;
     
     
+}
+.minutes,
+.hours{
+    font-size: 20px;
 }
 .clock-seconds{
     position: absolute;
@@ -71,7 +76,7 @@ body{
   font-weight: 400;
   font-style: normal;
     right: 50px;
-    top: -10px;
+    top: 10px;
     color: #48FF04;
 }
 
