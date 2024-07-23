@@ -16,6 +16,7 @@
       href="/Digital-Clock/Assests/morning-alarm.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
 
@@ -23,29 +24,40 @@
         <div class="clock">
             <div class="clock__inner">
                 <div class="clock-top    ">
-                    <h2>DIGITAL CLOCK</h2>
-                    <span class="ms-auto ">PM</span>
+                    <h2><i class="fa-regular fa-clock fa-spin fa-sm" style="color: #000000;"></i> DIGITAL CLOCK</h2>
+                    <span class="ms-auto time-format js-time-format">PM</span>
                 </div>
-                <div class="clock-body     container">
+                <div class="clock-body container">
                     <div class="row ps-5">
                         <div class="col-6 ">
-                            <h1 class="text-center js-hours">01</h1>
-                            <h2 class="text-center">HOURS</h2>
+                            <h1 class="text-center js-hours clock-hour"></h1>
+                            <h2 class="text-center hours">HOURS</h2>
                         </div>
                         <div class="col-6">
-                            <h1 class="text-center">50</h1>
-                            <h2 class="text-start">MINUTES</h2>
+                            <h1 class="text-center js-minutes clock-minute"></h1>
+                            <h2 class="minutes">MINUTES</h2>
                         </div>
                         
                     </div>
                     <span class="clock-second">S</span>
-                    <span class="clock-seconds">4</span>
+                    <span class="clock-seconds js-seconds"></span>
+                
                 </div>
-                <div class="clock-footer container    ">
-                    <div class="row px-5"></div>
+                <div class="container px-5">
+                    <div class="row mt-2">
+                        <div class="col clock-footer">
+                            <span class="Month js-months">MARCH</span>
+                            <span class="Day js-days">TUESDAY</span>
+                            <span class="Date js-dates">23</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="copy-right">© 2024 Jayavel L G. All rights reserved.</p>
                 </div>
             </div>
+            
         </div>
+        
     </div>
 
 
